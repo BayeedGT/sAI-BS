@@ -5,8 +5,13 @@ import {Navbar, Nav, NavDropdown, Button, FormControl, Form} from 'react-bootstr
 
 class Topnavbar extends Component {
     handleHamClick(){
-        console.log("button clicked")
-        // const sn = document.getElementById
+        const sn = document.getElementById("snav")
+        if (sn.style.display === "none") {
+            sn.style.display = "block";
+        } 
+        else {
+            sn.style.display = "none";
+        }
     }
     render() {
         return (
