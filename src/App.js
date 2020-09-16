@@ -16,8 +16,8 @@ function App() {
         <div className="col">
           <Sidebar/>
         </div>
-        <div className="col-9 mt-2 mr-5 mb-2">
-          <div className="mb-2">
+        <div className="col-10 maindiv">
+          <div className="dsc">
             <Desc/>
           </div>
           <div> 

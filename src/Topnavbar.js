@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Topnavbar.css'
 import Sidebar from './Sidebar';
 
 import {Navbar, Nav, NavDropdown, Button, FormControl, Form} from 'react-bootstrap'
@@ -16,7 +17,7 @@ class Topnavbar extends Component {
     render() {
         return (
             <div>
-                <Navbar bg="light" expand="lg" className="fixed-top">
+                <Navbar bg="light" expand="xl" className="fixed-top">
                     <Navbar.Brand href="#home"><div style={{margin: "0 150px 0 50px"}}>Senti AI</div></Navbar.Brand>
                     {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -31,8 +32,8 @@ class Topnavbar extends Component {
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
-                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" onClick={this.handleHamClick} type="button" data-toggle="offcanvas">
-                        <span class="mdi mdi-menu"></span>
+                    <button className="hambtn navbar-toggler navbar-toggler-right d-xl-none align-self-center btn btn-primary" onClick={this.handleHamClick} type="button" data-toggle="offcanvas">
+                        <span className="mdi mdi-menu"></span>
                     </button>
                 </Navbar>
             </div>

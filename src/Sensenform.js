@@ -7,35 +7,28 @@ class Sensenform extends Component {
             <div>
                 <div className="card bg-light">
                     <div className="card-body">
-                        <div className="container">
+                        {/* <div className="container"> */}
                             <div className="row">
-                                <div className="col">
+                                <div className="col inpForm">
                                     <h5 className="card-title">Sentence level sentiment analysis</h5>
                                     <div className="box-1">
-                                        <textarea 
-                                            style={{backgroundColor:"#EDF2FE", paddingTop:"10px", paddingLeft:"10px"}}
-                                            placeholder="Write your own text"
-                                            rows="10" 
-                                            cols="60" 
-                                            name="sentenceInput" 
-                                            type="text"
-                                            // onChange={this.handleUserInput} 
-                                            // value={this.state.inputText}
-                                        >
-                                        </textarea>
+                                        <textarea class="form-control" 
+                                        id="exampleFormControlTextarea1" 
+                                        rows="13"
+                                        placeholder="Write your own text"></textarea>
                                         <br/>
                                         <button className="btn btn-primary btn-sm">Classify</button>
                                     </div>
                                 </div>
                                 <div className="col">
-                                    <div className="box-2" style={{marginTop: "30px"}}>
+                                    <div className="box-2" style={{marginTop: "30px", padding:"0 5% 0 15%"}}>
                                         <div className="result-box">
                                             <div className="row">
                                                 <div className="col align-self-end class-score-labels">
                                                     <label style={{fontSize:"14px", fontWeight:"bold", opacity:".5", fontFamily: 'Roboto'}}>Class</label> <br/><br/>
                                                     <label style={{fontSize:"14px", fontWeight:"bold", opacity:".5", fontFamily: 'Roboto'}}>Score</label>
                                                 </div>
-                                                <div className="col">
+                                                <div className="col subjDiv">
                                                     <h6>Subjectivity</h6>
                                                     <select style={{borderRadius:"8px"}}>
                                                         <option value="" selected style={{display:"none"}}>Select</option>
@@ -67,13 +60,13 @@ class Sensenform extends Component {
                                                 {/* {this.state.visualHighlightText} */}
                                             </div>
                                             <br/>
-                                            <button className="btn btn-primary btn-sm" style={{marginRight: 20}}>Feedback</button> 
+                                            <button className="btn btn-primary btn-sm fbackbtn">Feedback</button> 
                                             <button className="btn btn-primary btn-sm">Comparison</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        {/* </div> */}
                     </div>
                 </div>
             </div>

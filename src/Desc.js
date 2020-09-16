@@ -7,7 +7,7 @@ class Desc extends Component {
             <div>
                 <div className="card bg-light" style={{marginTop: "60px"}}>
                     <div className="card-body">
-                        <h6 className="card-title">Sentiment Analysis</h6>
+                        <h5 className="card-title">Sentiment Analysis</h5>
                         <p className="card-text">This is a generic sentiment analysis classifier for texts in English. It works great 
                         in any kind of texts. If you are not sure of which sentiment analysis classifier to 
                         use, use this one.</p>

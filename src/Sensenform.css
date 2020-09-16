@@ -3,8 +3,31 @@ select {
     border: 1px solid #2680EB;
     font-size : 13px;
 }
-@media screen and (max-width:1150px){
+
+.fbackbtn {
+    margin-right : 5px;
+}
+
+@media screen and (max-width : 993px){
     .class-score-labels{
-        visibility: none;
+        display: none;
+    }
+}
+
+@media screen and (max-width : 804px){
+    .subjDiv{
+        margin-bottom : 45px;
+    }
+}
+
+@media screen and (max-width : 626px){
+    .fbackbtn{
+        margin-bottom : 5px;
+    }
+}
+
+@media screen and (min-width : 346px) and (max-width : 700px){
+    .inpForm{
+        width : 100%;
     }
 }

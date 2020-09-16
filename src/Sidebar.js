@@ -21,17 +21,17 @@ export class sidebar extends Component {
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div id="myDropdown1" className="dropdown-container">
-                        <a href="#">Sentences</a>
-                        <a href="#">Paragraph/Document</a>
-                        <a href="#">Domain/Link</a>
+                        <a href="/Sentiment/Sentences">Sentences</a>
+                        <a href="/Sentiment/Paragraph">Paragraph/Document</a>
+                        <a href="/Sentiment/Domain">Domain/Link</a>
                     </div>
                     <br/>
                     <button className="dropdown-btn" onClick={this.handleDdEmoClick}>Emotion Analysis
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div id="myDropdown2" className="dropdown-container">
-                        <a href="#">Sentences</a>
-                        <a href="#">Paragraph/Document</a>
+                        <a href="/Emotion/Sentences">Sentences</a>
+                        <a href="/Emotion/Paragraph">Paragraph/Document</a>
                     </div>
                 </div>
             </div>

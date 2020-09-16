@@ -1,7 +1,7 @@
 /* Fixed sidenav, full height */
 .sidenav {
     height: 100%;
-    width: 220px;
+    width: 14%;
     position: fixed; 
     z-index: 1;
     top: 0;
@@ -74,5 +74,15 @@
       .sidenav{
           right: 0;
           left : auto;
+          display: none;
+          width : 200px;
+          position : fixed;
       }
+  }
+  @media screen and (min-width : 1201px){
+    .sidenav{
+      left : 0;
+      display: block !important;
+      width : 14%;
+    }
   }
