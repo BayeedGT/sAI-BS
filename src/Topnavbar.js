@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Topnavbar.css'
 import Sidebar from './Sidebar';
 
-import {Navbar, Nav, NavDropdown, Button, FormControl, Form} from 'react-bootstrap'
+import {Navbar, Nav, NavDropdown, FormControl, Form} from 'react-bootstrap'
 
 class Topnavbar extends Component {
     handleHamClick(){

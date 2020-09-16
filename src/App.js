@@ -3,29 +3,33 @@ import './App.css';
 
 import Sidebar from './Sidebar';
 import Topnavbar from './Topnavbar';
-import Desc from './Desc';
-import Sensenform from './Sensenform'
+import SenSentence from './SenSentence';
+import SenParagraph from './SenParagraph'
+
+import {BrowserRouter, Route} from 'react-router-dom'
+import EmoSentence from './EmoSentence';
+import EmoParagraph from './EmoParagraph';
 
 function App() {
   return (
-    <div className="App">
-      <div className="row">
-        <Topnavbar/>
-      </div>
-      <div className="row">
-        <div className="col">
-          <Sidebar/>
+    <BrowserRouter>
+      <div className="App">
+        <div className="row">
+          <Topnavbar/>
         </div>
-        <div className="col-10 maindiv">
-          <div className="dsc">
-            <Desc/>
+        <div className="row">
+          <div className="col">
+            <Sidebar/>
           </div>
-          <div> 
-            <Sensenform/>
+          <div className="col-10 maindiv">
+            <Route path='/Sentiment/Sentences' component={SenSentence}/>
+            <Route path='/Sentiment/Paragraph' component={SenParagraph}/>
+            <Route path='/Emotion/Sentences' component={EmoSentence}/>
+            <Route path='/Emotion/Paragraph' component={EmoParagraph}/>
           </div>
         </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

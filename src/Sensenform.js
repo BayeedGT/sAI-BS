@@ -12,7 +12,7 @@ class Sensenform extends Component {
                                 <div className="col inpForm">
                                     <h5 className="card-title">Sentence level sentiment analysis</h5>
                                     <div className="box-1">
-                                        <textarea class="form-control" 
+                                        <textarea className="form-control" 
                                         id="exampleFormControlTextarea1" 
                                         rows="13"
                                         placeholder="Write your own text"></textarea>

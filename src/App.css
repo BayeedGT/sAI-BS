@@ -2,10 +2,6 @@
   margin: 3% 2% 3% 16%;
 }
 
-.dsc{
-  margin-bottom: 4%;
-}
-
 @media screen and (max-width : 1200px) {
   .maindiv{
     margin-left : 0;
