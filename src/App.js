@@ -22,7 +22,7 @@ function App() {
             <Sidebar/>
           </div>
           <div className="col-10 maindiv">
-            <Route path='/Sentiment/Sentences' component={SenSentence}/>
+            <Route exact path='/' component={SenSentence}/>
             <Route path='/Sentiment/Paragraph' component={SenParagraph}/>
             <Route path='/Emotion/Sentences' component={EmoSentence}/>
             <Route path='/Emotion/Paragraph' component={EmoParagraph}/>
