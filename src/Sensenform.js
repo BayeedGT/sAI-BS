@@ -9,7 +9,7 @@ class Sensenform extends Component {
                     <div className="card-body">
                         {/* <div className="container"> */}
                             <div className="row">
-                                <div className="col inpForm">
+                                <div className="col-12 col-sm-6 inpForm">
                                     <h5 className="card-title">Sentence level sentiment analysis</h5>
                                     <div className="box-1">
                                         <textarea className="form-control" 

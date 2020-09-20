@@ -18,10 +18,10 @@ function App() {
           <Topnavbar/>
         </div>
         <div className="row">
-          <div className="col">
+          <div className="col sdbar">
             <Sidebar/>
           </div>
-          <div className="col-10 maindiv">
+          <div className="col-sm-12 col-xl-10 maindiv">
             <Route exact path='/' component={SenSentence}/>
             <Route path='/Sentiment/Paragraph' component={SenParagraph}/>
             <Route path='/Emotion/Sentences' component={EmoSentence}/>
